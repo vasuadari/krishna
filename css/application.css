@@ -1,0 +1,22 @@
+#myCarousel {
+  margin-top: 20px;
+}
+
+.carousel-linked-nav,
+.item img {
+  display: block; 
+  margin: 0 auto;
+}
+
+.carousel-linked-nav {
+  width: 120px;
+  margin-bottom: 20px;   
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  padding-left: 0;
+  text-align: center;
+  list-style: none;
+}
