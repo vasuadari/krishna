@@ -4,13 +4,13 @@
 
 .carousel-linked-nav,
 .item img {
-  display: block; 
+  display: block;
   margin: 0 auto;
 }
 
 .carousel-linked-nav {
   width: 120px;
-  margin-bottom: 20px;   
+  margin-bottom: 20px;
   position: absolute;
   bottom: 10px;
   left: 50%;
@@ -133,4 +133,9 @@ body{
 
 .navbar {
   background: #ffffff;
+}
+
+.fitScreen {
+  width: 100%;
+  max-height: 98%;
 }
