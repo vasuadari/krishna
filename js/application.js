@@ -6,7 +6,7 @@
     interval: 3000
   });
 
-  /* SLIDE ON CLICK */ 
+  /* SLIDE ON CLICK */
 
   $('.carousel-linked-nav > li > a').click(function() {
 
@@ -40,6 +40,14 @@
       // select currently active item and add active class
       $('.carousel-linked-nav li:eq(' + idx + ')').addClass('active');
 
+  });
+
+  content = $('.content')
+  $('.progress').one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
+    function(e) {
+      $('.loader').addClass('hide')
+      $('.name span', content).toggleClass('hide', 1000, "easeOutSine" );
+      $('.menu-bar', content).toggleClass('hide', 2000, "easeOutSine" );
   });
 }(window.jQuery, window, document));
 // The global jQuery object is passed as a parameter
